@@ -1,2 +1,3 @@
-# release-changelog.sh
-A simple script to print changelogs from pull requests
+# changelogs.sh
+
+A simple script to fetch and print changelogs according to pull requests
