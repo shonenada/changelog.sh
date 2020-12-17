@@ -28,6 +28,7 @@ git checkout $RELEASE_BRANCH >> /dev/null 2>&1
 
 _debug "git pull $UPSTRAEM_REMOTE $RELEASE_BRANCH --tags"
 
+git fetch $UPSTREAM --tags >> /dev/null 2>&1
 git pull $UPSTRAEM_REMOTE $RELEASE_BRANCH --tags >> /dev/null 2>&1
 
 LATEST_TAG="$(git describe --tags --abbrev=0)" >> /dev/null
