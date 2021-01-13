@@ -5,7 +5,7 @@ _debug() {
 }
 
 UPSTRAEM_REMOTE="origin"
-RELEASE_BRANCH="release"
+RELEASE_BRANCH="master"
 
 git remote -v | grep 'upstream' >> /dev/null
 RC="$?";
