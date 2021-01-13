@@ -13,6 +13,12 @@ if [[ "$RC" == "0" ]]; then
     UPSTRAEM_REMOTE="upstream"
 fi
 
+git branch | grep 'release' >> /dev/null
+RC="$?";
+if [[ "$RC" == "0" ]]; then
+    RELEASE_BRANCH="release"
+fi
+
 REMOTE_URL=$(git remote get-url $UPSTRAEM_REMOTE)
 if [[ $REMOTE_URL == https* ]];
 then 
